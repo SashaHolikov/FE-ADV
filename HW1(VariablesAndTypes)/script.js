@@ -44,7 +44,7 @@ const costAfterDiscount = (totalCost - (totalCost / 100 * discount)).toFixed(2);
 console.log(`Стоимость со скидкой: ` + costAfterDiscount);
 
 // Прибыь
-const profit = (totalCost / 2 - (totalCost / 100 * discount).toFixed(2)).toFixed(2);
+const profit = (totalCost / 2 - (totalCost / 100 * discount)).toFixed(2);
 console.log(`Прибыь: ` + profit);
 
 
