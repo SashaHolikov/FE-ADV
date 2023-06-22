@@ -1,5 +1,5 @@
-// 1.Створити функцію getMaxDigit(number) – яка отримує будь-яке
-// число та виводить найбільшу цифру в цьому числі.
+// // 1.Створити функцію getMaxDigit(number) – яка отримує будь-яке
+// // число та виводить найбільшу цифру в цьому числі.
 
 function getMaxDigit() {
     let number = null;
@@ -198,8 +198,8 @@ function getRandomPassword() {
 }
 
 
-// 10. Створіть функцію, яка видаляє всі букви з речення.
-// Приклад: deleteLetters('a', "blablabla") -> "blblbl"
+// // 10. Створіть функцію, яка видаляє всі букви з речення.
+// // Приклад: deleteLetters('a', "blablabla") -> "blblbl"
 
 function deleteLetters() {
     let word = prompt('Введіть слово');
@@ -215,7 +215,8 @@ function deleteLetters() {
 
 function isPalyndrom() {
     let word = prompt('Слово для перевірки')
-    word = word.toLowerCase().trim;
+    word = word.toLowerCase().replace(/\s/g,'');
+    console.log(word)
     for (let i = 0; i < Math.ceil(word.length / 2); i++){
         if (word[i] !== word[word.length - 1 - i]) {
             return false
@@ -223,7 +224,6 @@ function isPalyndrom() {
     }
     return true
 }
-
 
 
 
