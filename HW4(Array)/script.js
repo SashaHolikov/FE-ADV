@@ -23,7 +23,7 @@ console.log('Створити пари студентів хлопець та д
 function getThemes(themes, couple) {    
     const coupleThisThemes = [];
     for (let i = 0; i < themes.length; i++){
-        coupleThisThemes.push([...couple[i], themes[i]])        
+        coupleThisThemes.push([couple[i].join(' i '), themes[i]])        
     }
     return coupleThisThemes;
 
