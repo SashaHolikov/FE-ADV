@@ -192,7 +192,7 @@ console.log('Замінити плохі слова =>' + replaceBadWords("It's 
 function divideByThree(word) {
     const arrayWithdivide = [];
     const resalt = [];
-    const arrayOfWord = (word.toLowerCase()).split('');
+    const arrayOfWord = (word.toLowerCase().replace(/\s/g,'')).split('');
     
 
     if (arrayOfWord.length < 3) {
@@ -213,5 +213,5 @@ function divideByThree(word) {
     return resalt
 }
 
-console.log('Розбити слово на склади по 3 буви  ' + divideByThree('Commanderae'))
+console.log('Розбити слово на склади по 3 буви  ', divideByThree('Comma n derae'))
 
