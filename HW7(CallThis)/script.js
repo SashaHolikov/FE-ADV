@@ -81,7 +81,7 @@ function getMySalary(country) {
             country = litva;
             name = 'Litva';
         } else {
-            return console.log('I don`t this coontry, try againe')
+            return console.log('I don`t know this country, try againe')
     }
     
     setInterval(() => {
