@@ -53,9 +53,9 @@ vacancies). Функція повинна викликатись через call
 function getTotalTaxes() {
     return this.tax*this.middleSalary*this.vacancies
 }
-console.log('Середні податки в Україні: ', getTotalTaxes.call(ukraine))
-console.log('Середні податки в Латвії: ', getTotalTaxes.call(latvia))
-console.log('Середні податки в Літви: ', getTotalTaxes.call(litva))
+console.log('Всього платять податків в Україні: ', getTotalTaxes.call(ukraine))
+console.log('Всього платять податків в Латвії: ', getTotalTaxes.call(latvia))
+console.log('Всього платять податків в Літви: ', getTotalTaxes.call(litva))
 console.log('---------------')
 
 /*
