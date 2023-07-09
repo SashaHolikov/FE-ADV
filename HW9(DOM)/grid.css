@@ -1,0 +1,8 @@
+.main_blok {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: auto;    
+}
