@@ -1,9 +1,9 @@
 class Student {
-    constructor(university, cours, fullName, marks) {
+    constructor(university, cours, fullName) {
         this.university = university;
         this.cours = cours;
         this.fullName = fullName;
-        this.marks = marks;
+        this.marks = [];
         this.ban = false;
     }
 
@@ -60,7 +60,8 @@ class BudgetStudent extends Student{
     }
 }
 
-const stas = new Student("ONAPT", 4, "Петров Станислав Олександрович", [5, 4, 4, 4]);
+const stas = new Student("ONAPT", 4, "Петров Станислав Олександрович");
+stas.marks = [5, 4, 4, 3]
 console.log('---------GET INFO--------')
 console.log(stas.getInfo);
 console.log('---------GET MARK--------')
