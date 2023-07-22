@@ -1,0 +1,18 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    flex-basis: 100%;
+}
+.nav {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section{
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    gap: 15px;
+}

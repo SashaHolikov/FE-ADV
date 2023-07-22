@@ -1,0 +1,44 @@
+*{
+    font-family: 'Tektur', cursive;
+    color: white;
+    background-color: rgba(58, 56, 56, 0.959);
+}
+
+h1{
+   font-size: 100px;
+   text-align: center;
+}
+.nav{
+    padding: 0 70px;
+}
+.button{
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(58, 56, 56, 0.959);
+    border: solid 2px white;
+    margin-bottom: 10px;
+
+}
+input{
+    width: 300px;
+}
+.button:hover{
+    border: solid 3px green;
+    color: green;
+    font-size: 27px;
+}
+.section{
+    padding-bottom: 20px;
+}
+.cardInfo{
+    border: solid 1px white;
+}
+.title{    
+    color: green;
+    font-size: 20px;
+
+}
+span{
+    display: block;
+}
