@@ -10,6 +10,8 @@ let characters = NaN;
 
 async function getInfo() {
     section.innerHTML = '';
+    document.getElementById('back').style.display = 'none';
+    document.getElementById('next').style.display = 'none';
     await fetch(base+'films/'+film.value, {
     method: "GET"
 }).then((reponse) => {
