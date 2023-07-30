@@ -41,9 +41,7 @@ function* newFontGenerator() {
         yield font = font + 2;
         } else if (parameter === 'down'){
         yield font = font - 2;
-        } else {
-            yield font
-        }
+        } 
     }
 }
 const fontGeneration = newFontGenerator();
@@ -53,7 +51,7 @@ const increase = document.getElementById('increase');
 
 reduce.addEventListener('click', clickReduce)
 
-function clickReduce() {
+function clickReduce() {    
     let font = fontGeneration.next('down').value
     document.getElementById('fontSize').style.fontSize =`${font}px`
 }
